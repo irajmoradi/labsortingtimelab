@@ -118,6 +118,13 @@ $ python3 runtimes.py --max_x=22
 and copy/paste the resulting table into this README file below this line.
 
 <!-- add the table here -->
+Length of xs | Tim Sort   | Merge_sorted | Quick_Sorted
+len(xs)=2**0 |  4.292E-06 | 3.390E-06    | 2.973E-06
+len(xs)=2**1 |  2.827E-06 | 1.026E-05    | 1.121E-05
+len(xs)=2**2 |  2.481E-06 | 1.273E-05    | 3.171E-05
+len(xs)=2**3 |  3.338E-06 | 3.501E-05    | 3.403E-05
+len(xs)=2**4 |  4.839E-06 | 7.790E-05    | 7.922E-05
+len(xs)=2**5 |  7.484E-06 | 1.683E-04    | 1.750E-04
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
