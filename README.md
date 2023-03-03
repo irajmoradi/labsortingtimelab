@@ -118,14 +118,29 @@ $ python3 runtimes.py --max_x=22
 and copy/paste the resulting table into this README file below this line.
 
 <!-- add the table here -->
-Length of xs | Tim Sort   | Merge_sorted | Quick_Sorted
-len(xs)=2**0 |  4.292E-06 | 3.390E-06    | 2.973E-06
-len(xs)=2**1 |  2.827E-06 | 1.026E-05    | 1.121E-05
-len(xs)=2**2 |  2.481E-06 | 1.273E-05    | 3.171E-05
-len(xs)=2**3 |  3.338E-06 | 3.501E-05    | 3.403E-05
-len(xs)=2**4 |  4.839E-06 | 7.790E-05    | 7.922E-05
-len(xs)=2**5 |  7.484E-06 | 1.683E-04    | 1.750E-04
 
+|Length of xs | Tim Sort   | Merge_sorted | Quick_Sorted |
+| --- | --- | --- | --- |
+|len(xs)=2**0 |  3.859E-06 | 3.312E-06    | 2.854E-06|
+|len(xs)=2**1 |  2.764E-06 | 9.701E-06    | 1.199E-05|
+|len(xs)=2**2 |  2.455E-06 | 1.640E-05    | 1.688E-05|
+|len(xs)=2**3 |  3.044E-06 | 3.599E-05    | 3.680E-05|
+|len(xs)=2**4 |  4.336E-06 | 8.023E-05    | 7.942E-05|
+|len(xs)=2**5 |  7.492E-06 | 1.746E-04    | 2.291E-04|
+|len(xs)=2**6 |  1.398E-05 | 3.620E-04    | 4.700E-04|
+|len(xs)=2**7 |  2.956E-05 | 8.806E-04    | 1.018E-03|
+|len(xs)=2**8 |  6.264E-05 | 1.886E-03    | 2.369E-03|
+|len(xs)=2**9 |  1.380E-04 | 8.226E-03    | 5.117E-03|
+|len(xs)=2**10 |  3.019E-04 | 9.268E-03    | 1.197E-02|
+|len(xs)=2**11 |  6.457E-04 | 2.036E-02    | 2.433E-02|
+|len(xs)=2**12 |  1.481E-03 | 4.532E-02    | 2.762E-02|
+|len(xs)=2**13 |  2.942E-03 | 8.350E-02    | 1.207E-01|
+|len(xs)=2**14 |  3.885E-03 | 1.793E-01    | 2.323E-01|
+|len(xs)=2**15 |  1.956E-02 | 4.305E-01    | 4.984E-01|
+|len(xs)=2**16 |  3.488E-02 | 9.474E-01    | 1.083E+00|
+|len(xs)=2**17 |  7.916E-02 | 1.951E+00    | 2.403E+00|
+|len(xs)=2**18 |  1.928E-01 | 3.896E+00    | 4.994E+00|
+|len(xs)=2**19 |  4.260E-01 | 8.754E+00    | 1.123E+01|
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
 but python's built-in sorting function uses lots of optimization tricks to achieve this extra speedup.
@@ -218,30 +233,6 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
-
-|Length of xs | Tim Sort   | Merge_sorted | Quick_Sorted |
-| --- | --- | --- | --- |
-|len(xs)=2**0 |  3.859E-06 | 3.312E-06    | 2.854E-06|
-|len(xs)=2**1 |  2.764E-06 | 9.701E-06    | 1.199E-05|
-|len(xs)=2**2 |  2.455E-06 | 1.640E-05    | 1.688E-05|
-|len(xs)=2**3 |  3.044E-06 | 3.599E-05    | 3.680E-05|
-|len(xs)=2**4 |  4.336E-06 | 8.023E-05    | 7.942E-05|
-|len(xs)=2**5 |  7.492E-06 | 1.746E-04    | 2.291E-04|
-|len(xs)=2**6 |  1.398E-05 | 3.620E-04    | 4.700E-04|
-|len(xs)=2**7 |  2.956E-05 | 8.806E-04    | 1.018E-03|
-|len(xs)=2**8 |  6.264E-05 | 1.886E-03    | 2.369E-03|
-|len(xs)=2**9 |  1.380E-04 | 8.226E-03    | 5.117E-03|
-|len(xs)=2**10 |  3.019E-04 | 9.268E-03    | 1.197E-02|
-|len(xs)=2**11 |  6.457E-04 | 2.036E-02    | 2.433E-02|
-|len(xs)=2**12 |  1.481E-03 | 4.532E-02    | 2.762E-02|
-|len(xs)=2**13 |  2.942E-03 | 8.350E-02    | 1.207E-01|
-|len(xs)=2**14 |  3.885E-03 | 1.793E-01    | 2.323E-01|
-|len(xs)=2**15 |  1.956E-02 | 4.305E-01    | 4.984E-01|
-|len(xs)=2**16 |  3.488E-02 | 9.474E-01    | 1.083E+00|
-|len(xs)=2**17 |  7.916E-02 | 1.951E+00    | 2.403E+00|
-|len(xs)=2**18 |  1.928E-01 | 3.896E+00    | 4.994E+00|
-|len(xs)=2**19 |  4.260E-01 | 8.754E+00    | 1.123E+01|
-
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
 This is because TimSort is designed to not have to resort already sorted data,

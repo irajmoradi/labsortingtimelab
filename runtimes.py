@@ -19,8 +19,8 @@ if __name__ == '__main__':
     parser.add_argument('--max_x', type=int, default=0)
     parser.add_argument('--input', choices=['sorted', 'random'], default='random')
     args = parser.parse_args()
-    print("Length of xs | Tim Sort   | Merge_sorted | Quick_Sorted ")
-    
+    print("|Length of xs | Tim Sort   | Merge_sorted | Quick_Sorted |")
+    print("| --- | --- | --- | --- |")    
     # perform the runtime tests
     for x in range(0, args.max_x+1):
 
@@ -53,4 +53,4 @@ if __name__ == '__main__':
         # You will have to look up how to do this formatting.
         # In order to get a proper markdown table,
         # you will have to also print a header line somewhere else.
-        print(f'len(xs)=2**{x} |  {"%.3E" % runtimes.get("timsort")} | {"%.3E" % runtimes.get("merge_sorted")}    | {"%.3E" % runtimes.get("quick_sorted")}')
+        print(f'|len(xs)=2**{x} |  {"%.3E" % runtimes.get("timsort")} | {"%.3E" % runtimes.get("merge_sorted")}    | {"%.3E" % runtimes.get("quick_sorted")}|')
